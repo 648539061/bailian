@@ -1,0 +1,1922 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>商品详情页</title>
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/goods.css" />
+    <script src="../js/jquery-1.10.1.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/goods.js"></script>
+    <script type="text/javascript" src="../js/jquery.imagezoom.min.js"></script>
+    <script type="text/javascript">
+    $(function(){
+        $(".jqzoom").imagezoom();
+    
+        $("#thumblist li a").click(function(){
+            $(this).parents("li").addClass("tb-selected").siblings().removeClass("tb-selected");
+            $(".tb-s310").find('.jqzoom').attr('src',$(this).find("img").attr("mid"));
+            $(".tb-s310").find('.jqzoom').attr('rel',$(this).find("img").attr("big"));
+        });
+        $('.common a').click(function(){
+            return false;
+        });
+    });
+    </script>
+</head>
+<body>
+    <!-- right-slidebar -->
+    <div id="right-slidebar">
+        <div class="p">
+            <div class="right-car">
+                <i></i>
+                <span>购<br />物<br />车</span>
+                <div id="cartNum">0</div>
+            </div>
+            <div class="shoucang">                
+                <i></i>
+            </div>
+            <div class="history">
+                <i></i>
+            </div>
+            <div class="erweima">
+                <i></i>
+            </div>
+            <div class="kefu">
+                <i></i>
+            </div>
+        </div>
+        <div class="right-slidebar">
+            <div class="remove">
+                <div class="remove-top">
+                    <i class="sidebar-closed"></i>
+                    <div class="iconfont"></div>
+                </div>
+            </div>
+            <div class="cars">
+                <div class="buy"></div>
+                <div class="look">
+                    <div class="look_top">
+                        <span>共0件商品，总计：￥0.00</span>
+                        <a href="#">查看购物车</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- tools -->
+    <div id="tools">
+        <div class="warp common">
+            <div class="bl_left">
+                <span>百联集团旗下全渠道电商平台</span>
+            </div>
+            <div class="bl_center">
+                <a href="#"><span>
+                    网页导航
+                </span><i></i></a>
+                <a href="#">消息</a>
+            </div>
+            <div class="bl">
+                <ul>
+                    <li><i></i><a href="#">请登录</a></li>
+                    <li><a href="#">注册</a></li>
+                    <li><a href="#">我的订单</a></li>
+                    <li><a href="#">我的百联</a></li>
+                    <li><a href="#">充值缴费</a><i></i></li>
+                    <li><a href="#">客户服务</a><i></i></li>
+                    <li><a href="#">掌上百联</a><i></i></li>
+                    <li><a href="#">购物车</li></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- top -->
+    <div id="top">
+        <div class="top common">
+            <div class="top_l">
+                <a href="/"><img src="../css/img/header-logo.png" alt="" /></a>
+                <a href="#" style="margin-left:60px"><img src="../css/img/beats.png" alt="" /></a>
+            </div>
+            <div class="top_c">
+                <div class="top_input">
+                    <input type="text" placeholder="iPhoneXs预约开启，分期购还返券"/>
+                </div>
+                <button type="submit">搜索</button>
+                <div class="goods">
+                    <a href="#">美心月饼</a>
+                    <span>丨</span>
+                    <a href="#">水</a>
+                    <span>丨</span>
+                    <a href="#">卫生巾</a>
+                    <span>丨</span>
+                    <a href="#">洗面奶</a>
+                    <span>丨</span>
+                    <a href="#">洗发水</a>
+                    <span>丨</span>
+                    <a href="#">巧克力</a>
+                    <span>丨</span>
+                    <a href="#">纸巾</a>
+                    <span>丨</span>
+                    <a href="#">矿泉水</a>
+                    <span>丨</span>
+                </div>
+            </div>
+            <div class="top_r">
+                <div class="ok"><a href="#">安付宝ok卡专区＞</a></div>
+            </div>
+        </div> 
+    </div>
+    <!-- nav -->
+    <div id="nav">
+        <div class="nav common">
+            <div class="nav_l">
+                <a href="#"><span>所有商品分类</span></a>
+                <div class="nav_move">
+                    <div class="nav_move_top">
+                        <ul>
+                            <li><i></i><a href="#">百联进口 全球购</a></li>
+                            <li><i></i><a href="#">生鲜食品</a></li>
+                            <li><i></i><a href="#">食品粮油 酒水冲饮</a></li>
+                            <li><i></i><a href="#">美容护理</a></li>
+                            <li><i></i><a href="#">餐厨用具 家居家装</a></li>
+                            <li><i></i><a href="#">母婴玩具</a></li>
+                            <li><i></i><a href="#">家清 纸巾 一次性</a></li>
+                            <li><i></i><a href="#">女装 男装</a></li>
+                            <li><i></i><a href="#">鞋靴箱包 珠宝饰品</a></li>
+                            <li><i></i><a href="#">手机数码 电脑办公</a></li>
+                            <li><i></i><a href="#">家用电器</a></li>
+                            <li><i></i><a href="#">运动户外 汽车用品</a></li>
+                            <li><i></i><a href="#">营养保健 第一医药</a></li>
+                            <li><i></i><a href="#">礼品卡 充值 图书</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav_move_show">
+                        <ul>
+                            <li>
+                                <div class="nav_all">
+                                <div>
+                                    <span><a href="#">1美妆护肤＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span>
+                                </div>
+                                <div><span><a href="#">个人护理＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">进口美食＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">乳品冲饮＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">家庭清洁＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">进口母婴＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">品质家居＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">鞋靴箱包＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">腕表饰品＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                </span></div>
+                                </div>
+                                <div class="top_img">
+                                    <img src="../css/img/1273243422.jpg" alt="" />
+                                    <img src="../css/img/1519254729.jpg" alt="" />
+                                </div>
+                            </li>
+                            <li>
+                                <div class="nav_all">
+                                <div>
+                                    <span><a href="#">2美妆护肤＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span>
+                                </div>
+                                <div><span><a href="#">个人护理＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">进口美食＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">乳品冲饮＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">家庭清洁＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">进口母婴＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">品质家居＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">鞋靴箱包＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">腕表饰品＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                </span></div>
+                                </div>
+                                <div class="top_img">
+                                    <img src="../css/img/1273243422.jpg" alt="" />
+                                    <img src="../css/img/1519254729.jpg" alt="" />
+                                </div></li>
+                            <li>                                <div class="nav_all">
+                                <div>
+                                    <span><a href="#">3美妆护肤＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span>
+                                </div>
+                                <div><span><a href="#">个人护理＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">进口美食＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">乳品冲饮＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">家庭清洁＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">进口母婴＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">品质家居＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">鞋靴箱包＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">腕表饰品＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                </span></div>
+                                </div>
+                                <div class="top_img">
+                                    <img src="../css/img/1273243422.jpg" alt="" />
+                                    <img src="../css/img/1519254729.jpg" alt="" />
+                                </div></li>
+                            <li>                                <div class="nav_all">
+                                <div>
+                                    <span><a href="#">4美妆护肤＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span>
+                                </div>
+                                <div><span><a href="#">个人护理＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">进口美食＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">乳品冲饮＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">家庭清洁＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">进口母婴＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">品质家居＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">鞋靴箱包＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">腕表饰品＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                </span></div>
+                                </div>
+                                <div class="top_img">
+                                    <img src="../css/img/1273243422.jpg" alt="" />
+                                    <img src="../css/img/1519254729.jpg" alt="" />
+                                </div></li>
+                            <li>                                <div class="nav_all">
+                                <div>
+                                    <span><a href="#">5美妆护肤＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span>
+                                </div>
+                                <div><span><a href="#">个人护理＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">进口美食＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">乳品冲饮＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">家庭清洁＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">进口母婴＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">品质家居＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">鞋靴箱包＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">腕表饰品＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                </span></div>
+                                </div>
+                                <div class="top_img">
+                                    <img src="../css/img/1273243422.jpg" alt="" />
+                                    <img src="../css/img/1519254729.jpg" alt="" />
+                                </div></li>
+                            <li>                                <div class="nav_all">
+                                <div>
+                                    <span><a href="#">6美妆护肤＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span>
+                                </div>
+                                <div><span><a href="#">个人护理＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">进口美食＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">乳品冲饮＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">家庭清洁＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">进口母婴＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">品质家居＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">鞋靴箱包＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">腕表饰品＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                </span></div>
+                                </div>
+                                <div class="top_img">
+                                    <img src="../css/img/1273243422.jpg" alt="" />
+                                    <img src="../css/img/1519254729.jpg" alt="" />
+                                </div></li>
+                            <li>                                <div class="nav_all">
+                                <div>
+                                    <span><a href="#">7美妆护肤＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span>
+                                </div>
+                                <div><span><a href="#">个人护理＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">进口美食＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">乳品冲饮＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">家庭清洁＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">进口母婴＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">品质家居＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">鞋靴箱包＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">腕表饰品＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                </span></div>
+                                </div>
+                                <div class="top_img">
+                                    <img src="../css/img/1273243422.jpg" alt="" />
+                                    <img src="../css/img/1519254729.jpg" alt="" />
+                                </div></li>
+                            <li>                                
+                            <div class="nav_all">
+                                <div>
+                                    <span><a href="#">8美妆护肤＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span>
+                                </div>
+                                <div><span><a href="#">个人护理＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">进口美食＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">乳品冲饮＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">家庭清洁＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">进口母婴＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">品质家居＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">鞋靴箱包＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">腕表饰品＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                </span></div>
+                                </div>
+                                <div class="top_img">
+                                    <img src="../css/img/1273243422.jpg" alt="" />
+                                    <img src="../css/img/1519254729.jpg" alt="" />
+                                </div></li>
+                            <li>                                <div class="nav_all">
+                                <div>
+                                    <span><a href="#">9美妆护肤＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span>
+                                </div>
+                                <div><span><a href="#">个人护理＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">进口美食＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">乳品冲饮＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">家庭清洁＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">进口母婴＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">品质家居＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">鞋靴箱包＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">腕表饰品＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                </span></div>
+                                </div>
+                                <div class="top_img">
+                                    <img src="../css/img/1273243422.jpg" alt="" />
+                                    <img src="../css/img/1519254729.jpg" alt="" />
+                                </div></li>
+                            <li>                                <div class="nav_all">
+                                <div>
+                                    <span><a href="#">10美妆护肤＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span>
+                                </div>
+                                <div><span><a href="#">个人护理＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">进口美食＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">乳品冲饮＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">家庭清洁＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">进口母婴＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">品质家居＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">鞋靴箱包＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">腕表饰品＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                </span></div>
+                                </div>
+                                <div class="top_img">
+                                    <img src="../css/img/1273243422.jpg" alt="" />
+                                    <img src="../css/img/1519254729.jpg" alt="" />
+                                </div></li>
+                            <li>                                <div class="nav_all">
+                                <div>
+                                    <span><a href="#">11美妆护肤＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span>
+                                </div>
+                                <div><span><a href="#">个人护理＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">进口美食＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">乳品冲饮＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">家庭清洁＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">进口母婴＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">品质家居＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">鞋靴箱包＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">腕表饰品＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                </span></div>
+                                </div>
+                                <div class="top_img">
+                                    <img src="../css/img/1273243422.jpg" alt="" />
+                                    <img src="../css/img/1519254729.jpg" alt="" />
+                                </div></li>
+                            <li>                                <div class="nav_all">
+                                <div>
+                                    <span><a href="#">12美妆护肤＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span>
+                                </div>
+                                <div><span><a href="#">个人护理＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">进口美食＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">乳品冲饮＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">家庭清洁＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">进口母婴＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">品质家居＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">鞋靴箱包＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">腕表饰品＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                </span></div>
+                                </div>
+                                <div class="top_img">
+                                    <img src="../css/img/1273243422.jpg" alt="" />
+                                    <img src="../css/img/1519254729.jpg" alt="" />
+                                </div></li>
+                            <li>                                <div class="nav_all">
+                                <div>
+                                    <span><a href="#">13美妆护肤＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span>
+                                </div>
+                                <div><span><a href="#">个人护理＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">进口美食＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">乳品冲饮＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">家庭清洁＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">进口母婴＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">品质家居＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">鞋靴箱包＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">腕表饰品＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                </span></div>
+                                </div>
+                                <div class="top_img">
+                                    <img src="../css/img/1273243422.jpg" alt="" />
+                                    <img src="../css/img/1519254729.jpg" alt="" />
+                                </div></li>
+                            <li>
+                                <div class="nav_all">
+                                <div>
+                                    <span><a href="#">14美妆护肤＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span>
+                                </div>
+                                <div><span><a href="#">个人护理＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">进口美食＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">乳品冲饮＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">家庭清洁＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">进口母婴＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">品质家居＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">鞋靴箱包＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    </span></div>
+                                <div><span><a href="#">腕表饰品＞</a></span><span>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">面膜</a>
+                                </span></div>
+                                </div>
+                                <div class="top_img">
+                                    <img src="../css/img/1273243422.jpg" alt="" />
+                                    <img src="../css/img/1519254729.jpg" alt="" />
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="nav_r">
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">生活日用</a></li>
+                    <li><a href="#">24H百货</a></li>
+                    <li><a href="#">全球购</a></li>
+                    <li><a href="#">精品闪购</a></li>
+                    <li><a href="#">电器城</a></li>
+                    <li><a href="#">奥莱代购</a></li>
+                    <li><a href="#">礼品卡</a></li>
+                </ul>           
+            </div>
+        </div>
+    </div>
+    <div id="white">
+        <div class="white common"></div>
+    </div>
+
+    <!-- glass -->
+    <div id="box">
+        <div class="box common">
+            <div class="tb-booth tb-pic tb-s310">
+                <img src="../css/goods_img/06jeep_200x200.jpg" rel="../css/goods_img/06jeep_200x200.jpg" class="jqzoom" />
+            </div>
+            <div class="shop">
+                <!-- 商品生成 -->
+                <div class="message"></div>
+                <div class="message_b">
+                    <button class="buy_now" id="addpurchase" onclick="buyNow()">立即购买</button>
+                    <button id="addCart" class="btn_buy">加入购物车</button>
+                    <a href="javascript:void(0);" class="collect" goodsid="3348667" id="j-sc">收藏</a>
+                </div>
+            </div> 
+            <ul class="tb-thumb" id="thumblist">
+  <!--               <li class="tb-selected">
+                    <div class="tb-pic tb-s40">
+                        <a href="#">
+                            <img src="../css/goods_img/06jeep_200x2001.jpg" mid="../css/goods_img/06jeep_200x200.jpg" big="../css/goods_img/06jeep_200x200.jpg">
+                        </a>
+                    </div>
+                </li>
+                <li><div class="tb-pic tb-s40"><a href="#"><img  src="images/02_small.jpg" mid="images/02_mid.jpg" big="images/02.jpg"></a></div></li>
+                <li><div class="tb-pic tb-s40"><a href="#"><img src="images/03_small.jpg" mid="images/03_mid.jpg" big="images/03.jpg"></a></div></li>
+                <li><div class="tb-pic tb-s40"><a href="#"><img src="images/04_small.jpg" mid="images/04_mid.jpg" big="images/04.jpg"></a></div></li>
+                <li><div class="tb-pic tb-s40"><a href="#"><img src="images/05_small.jpg" mid="images/05_mid.jpg" big="images/05.jpg"></a></div></li> -->
+
+            </ul>               
+        </div> 
+    </div>
+    <!-- footer -->
+    <div id="footer">
+        <div class="footer common">
+            <div class="helpnav">
+                <div class="helpnav-com">    
+                    <ul style="margin-left:50px">
+                        <i><span>新手入门</span></i>
+                        <li><a href="#" target="_blank">购物流程</a></li>
+                        <li><a href="#" target="_blank">会员介绍</a></li>
+                        <li><a href="#" target="_blank">常见问题</a></li>
+                        <li><a href="#" target="_blank">发票说明</a></li>
+                        <li><a href="#" target="_blank">联系客服</a></li>
+                    </ul>
+                </div>                
+                <div class="helpnav-com">              
+                    <ul>
+                        <i><span>配送服务</span></i>
+                        <li><a href="#">配送范围及运费</a></li>
+                        <li><a href="#">配送进度查询</a></li>
+                        <li><a href="#">自提服务</a></li>
+                        <li><a href="#">商品验货与签收</a></li>
+                    </ul>
+                </div>
+                <div class="helpnav-com">        
+                    <ul>
+                        <i class="footic3"><span>支付方式</span></i>
+                        <li><a href="#">货到付款</a></li>
+                        <li><a href="#">在线支付</a></li>
+                    </ul>
+                </div>
+                <div class="helpnav-com">   
+                    <ul>
+                        <i class="footic4"><span>售后服务</span></i>
+                        <li><a href="#">退换货政策</a></li>
+                        <li><a href="#">退换货流程</a></li>
+                        <li><a href="#">退款说明</a></li>
+                    </ul>
+                </div>
+                <div class="helpnav-com">
+                    <ul>
+                        <i class="footic5"><span>商家支持</span></i>
+                        <li><a href="#">商家入驻</a></li>
+                        <li><a href="#">商家规则</a></li>
+                        <li><a href="#">商家常见问题</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-nav">
+            <div>
+                <a href="#">关于我们</a>
+                <span>|</span>
+                <a href="#">联系我们</a>
+                <span>|</span>
+                <a href="#">加盟合作</a>
+                <span>|</span>
+                <a href="#">诚征英才</a>
+                <span>|</span>
+                <a href="#">友情链接</a>
+            </div>
+            <div class="copyright">百联集团有限公司旗下 上海百联全渠道电子商务有限公司版权所有 <span>|</span>  客服电话：400-900-8800  <span>|</span> 沪ICP备15028847号</div>
+            <a href="#" class="drug-message">互联网药品信息服务资质证书编号：沪-（非营业性）-2016-0044</a><br>
+            <a href="#" class="drug-message">全渠道增值电信业务经营许可证</a>
+            <div class="police">
+                <a href="#">
+                <img src="../css/img/gongan.png">
+                <span style="">沪公网安备  31010102002366号</span>
+              </a>
+              <a href="#">
+                <img src="../css/img/wangjing.png">
+                <span style="">网购大家评</span>
+              </a>
+              <a href="#">
+                <img src="../css/img/gongs.png" width="20" height="21">
+                <span style="">上海工商</span>
+              </a>
+              <a href="#">
+                <img src="../css/img/zhizhao.png">
+                <span style="">经营执照</span>
+              </a>
+            </div>
+        </div>
+    </div>       
+</body>
+</html>

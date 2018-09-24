@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>购物车</title>
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/car.css" />
+    <script src="../js/jquery-1.10.1.min.js"></script>
+    <script src="../js/car.js"></script>
+
+</head>
+<body>
+   <!-- tools -->
+    <div id="tools">
+        <div class="warp common">
+            <div class="bl_left">
+                <span>百联集团旗下全渠道电商平台</span>
+            </div>
+            <div class="bl_center">
+                <a href="#"><span>
+                    网页导航
+                </span><i></i></a>
+                <a href="#">消息</a>
+            </div>
+            <div class="bl">
+                <ul>
+                    <li><i></i><a href="login.html">请登录</a></li>
+                    <li><a href="#">注册</a></li>
+                    <li><a href="#">我的订单</a></li>
+                    <li><a href="#">我的百联</a></li>
+                    <li><a href="#">充值缴费</a><i></i></li>
+                    <li><a href="#">客户服务</a><i></i></li>
+                    <li><a href="#">掌上百联</a><i></i></li>
+                    <li><a href="#">购物车</li></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- top -->
+    <div id="top">
+        <div class="top">
+            <a href="/" class="img_car"><img src="../css/img/header-logo.png"/></a>
+            <span>购物车</span>
+            <div class="top_right">
+                <p>现在 <a href="#">登录</a>,您购物车中的商品将会被永久保存</p>
+            </div>
+        </div>
+    </div>
+    <!-- buy -->
+    <div id="buy">
+        <div class="buy common">
+            <div class="all_goods">全部商品<span></span></div>
+            <div class="buyto">
+            <div class="send_message">配送至</div>
+            <div class="address-name">
+                    <span id="provinceName">
+                        上海市
+                        <input class="provinceId" value="866" type="hidden">
+                        <input class="provinceId" type="hidden" name="provinceId" value="undefined"></span>
+                    <span id="cityName">
+                        市直辖
+                        <input class="cityId" value="867" type="hidden">
+                        <input class="cityId" type="hidden" name="cityId" value="undefined"></span>
+                    <span id="districtName">
+                        黄浦区
+                        <input class="districtId" value="868" type="hidden">
+                        <input class="districtId" type="hidden" name="districtId" value="undefined"></span>
+                <i></i>
+            </div>
+        </div>
+        </div>
+        <div class="shopname common">
+            <div class="cart-head">
+                <div class="quanxuan">
+                    <input type="checkbox" id="all"/><span class="name">全选</span>
+                </div>
+                <div class="item">商品信息</div>
+                <div class="item-price">单价（元）</div>
+                <div class="number">件数</div>
+                <div class="total-price">金额（元）</div>
+                <div class="action">操作</div>
+            </div>
+        </div>
+    </div>
+    <div id="shangpin">
+        <!-- 商品写入 -->
+        <div class="shangpin common clearfix"></div>
+        <div class="goodscar common">
+            <div class="select"><input type="checkbox" id="allcheck" /><span>全选</span></div>
+            <div class="shanchu"><a href="#" class="txt delete"><i></i>删除</a></div>
+            <div class="shixiao"><span>清除失效商品</span></div>
+            <div class="shoucang"><span>移入收藏夹</span></div>
+            <div class="xuanze"><span>已选择<i>0</i>件商品</span>共<b>0</b>种</div>
+            <div class="jine">商品金额:<i>￥</i><span>0</span></div>
+            <div class="jiesuan">去结算</div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div id="footer">
+        <div class="footer common">
+            <div class="helpnav">
+                <div class="helpnav-com">    
+                    <ul style="margin-left:50px">
+                        <i><span>新手入门</span></i>
+                        <li><a href="#" target="_blank">购物流程</a></li>
+                        <li><a href="#" target="_blank">会员介绍</a></li>
+                        <li><a href="#" target="_blank">常见问题</a></li>
+                        <li><a href="#" target="_blank">发票说明</a></li>
+                        <li><a href="#" target="_blank">联系客服</a></li>
+                    </ul>
+                </div>                
+                <div class="helpnav-com">              
+                    <ul>
+                        <i><span>配送服务</span></i>
+                        <li><a href="#">配送范围及运费</a></li>
+                        <li><a href="#">配送进度查询</a></li>
+                        <li><a href="#">自提服务</a></li>
+                        <li><a href="#">商品验货与签收</a></li>
+                    </ul>
+                </div>
+                <div class="helpnav-com">        
+                    <ul>
+                        <i class="footic3"><span>支付方式</span></i>
+                        <li><a href="#">货到付款</a></li>
+                        <li><a href="#">在线支付</a></li>
+                    </ul>
+                </div>
+                <div class="helpnav-com">   
+                    <ul>
+                        <i class="footic4"><span>售后服务</span></i>
+                        <li><a href="#">退换货政策</a></li>
+                        <li><a href="#">退换货流程</a></li>
+                        <li><a href="#">退款说明</a></li>
+                    </ul>
+                </div>
+                <div class="helpnav-com">
+                    <ul>
+                        <i class="footic5"><span>商家支持</span></i>
+                        <li><a href="#">商家入驻</a></li>
+                        <li><a href="#">商家规则</a></li>
+                        <li><a href="#">商家常见问题</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-nav">
+            <div>
+                <a href="#">关于我们</a>
+                <span>|</span>
+                <a href="#">联系我们</a>
+                <span>|</span>
+                <a href="#">加盟合作</a>
+                <span>|</span>
+                <a href="#">诚征英才</a>
+                <span>|</span>
+                <a href="#">友情链接</a>
+            </div>
+            <div class="copyright">百联集团有限公司旗下 上海百联全渠道电子商务有限公司版权所有 <span>|</span>  客服电话：400-900-8800  <span>|</span> 沪ICP备15028847号</div>
+            <a href="#" class="drug-message">互联网药品信息服务资质证书编号：沪-（非营业性）-2016-0044</a><br>
+            <a href="#" class="drug-message">全渠道增值电信业务经营许可证</a>
+            <div class="police">
+                <a href="#">
+                <img src="../css/img/gongan.png">
+                <span style="">沪公网安备  31010102002366号</span>
+              </a>
+              <a href="#">
+                <img src="../css/img/wangjing.png">
+                <span style="">网购大家评</span>
+              </a>
+              <a href="#">
+                <img src="../css/img/gongs.png" width="20" height="21">
+                <span style="">上海工商</span>
+              </a>
+              <a href="#">
+                <img src="../css/img/zhizhao.png">
+                <span style="">经营执照</span>
+              </a>
+            </div>
+        </div>
+    </div>       
+</body>
+</html>

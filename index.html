@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>百联首页</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/opacity.css" />
+    <script src="js/require.js" data-main="js/main.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery-1.10.1.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+<!--     <link rel="stylesheet" href="lib/swiper-4.4.1/dist/css/swiper.css">
+    <script src="lib/swiper-4.4.1/dist/js/swiper.js"></script> -->
+
+    <script src="js/index.js"></script>
+    <script src="js/zuoce.js"></script>
+    <script src="js/opacity.js"></script>
+
+    <script language="javascript">
+    
+    // $(function(){
+    //     var mySwiper = new Swiper('.swiper-container', {
+    //         // effect : 'fade',//淡入淡出效果
+    //         // el: '.swiper-pagination',
+    //         autoplay: {//自动播放部分
+    //         delay: 4000,
+    //         disableOnInteraction: false,
+    //         },
+    //         autoplay: true,//可选选项，自动滑动
+    //         effect: 'fade',//淡入
+
+    //         pagination: {
+    //             el: '.swiper-pagination',
+    //             clickable :true,
+    //         },
+    //         navigation: {
+    //           nextEl: '.swiper-button-next',
+    //           prevEl: '.swiper-button-prev',
+    //           hideOnClick: true,
+    //           hiddenClass: 'my-button-hidden',
+    //         },
+
+    //     });
+    // });
+    // 
+    $(function(){
+        $("#carousel-big a").carousel({
+            W : 715,
+            H : 430,
+            speed : 3000,
+            //是否循环轮播如果设置该属性，那么会到最后的一个的时候停止轮播
+            isloop : false,//默认为false
+            iscarousel : true//默认为true
+            //是否开启轮播模式
+        });
+    });
+    </script>
+</head>
+<body>
+    <!-- zuoce -->
+    <ul class="zuoce" id="aa">
+        <li>各类商品</li>
+        <li>生鲜果蔬</li>
+        <li>时尚大牌</li>
+        <div class="gotop">返回顶部</div>
+    </ul>
+    <div id="box">
+        
+    </div>
+    <!-- right-slidebar -->
+    <div id="right-slidebar">
+        <div class="p">
+            <div class="right-car">
+                <i></i>
+                <span>购<br />物<br />车</span>
+                <div id="cartNum">0</div>
+            </div>
+            <div class="shoucang">                
+                <i></i>
+            </div>
+            <div class="history">
+                <i></i>
+            </div>
+            <div class="erweima">
+                <i></i>
+            </div>
+            <div class="kefu">
+                <i></i>
+            </div>
+        </div>
+        <div class="right-slidebar">
+            <div class="remove">
+                <div class="remove-top">
+                    <i class="sidebar-closed"></i>
+                    <div class="iconfont"></div>
+                </div>
+            </div>
+            <div class="cars">
+                <div class="buy"></div>
+                <div class="look">
+                    <div class="look_top">
+                        <span>共0件商品，总计：￥0.00</span>
+                        <a href="#">查看购物车</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- tools -->
+    <div id="tools">
+        <div class="warp common">
+            <div class="bl_left">
+                <span>百联集团旗下全渠道电商平台</span>
+            </div>
+            <div class="bl_center">
+                <a href="#"><span>
+                    网页导航
+                </span><i></i></a>
+                <a href="#">消息</a>
+            </div>
+            <div class="bl">
+                <ul>
+                    <li><i></i><a href="html/login.html">请登录</a></li>
+                    <li><a href="html/register.html">注册</a></li>
+                    <li><a href="#">我的订单</a></li>
+                    <li><a href="#">我的百联</a></li>
+                    <li><a href="#">充值缴费</a><i></i></li>
+                    <li><a href="#">客户服务</a><i></i></li>
+                    <li><a href="#">掌上百联</a><i></i></li>
+                    <li><a href="#">购物车</li></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- top -->
+    <div id="top">
+        <div class="top common">
+            <div class="top_l">
+                <a href="#"><img src="css/img/header-logo.png" alt="" /></a>
+                <a href="#" style="margin-left:60px"><img src="css/img/beats.png" alt="" /></a>
+            </div>
+            <div class="top_c">
+                <div class="top_input">
+                    <input type="text" placeholder="iPhoneXs预约开启，分期购还返券"/>
+                </div>
+                <button type="submit">搜索</button>
+                <div class="goods">
+                    <a href="#">美心月饼</a>
+                    <span>丨</span>
+                    <a href="#">水</a>
+                    <span>丨</span>
+                    <a href="#">卫生巾</a>
+                    <span>丨</span>
+                    <a href="#">洗面奶</a>
+                    <span>丨</span>
+                    <a href="#">洗发水</a>
+                    <span>丨</span>
+                    <a href="#">巧克力</a>
+                    <span>丨</span>
+                    <a href="#">纸巾</a>
+                    <span>丨</span>
+                    <a href="#">矿泉水</a>
+                    <span>丨</span>
+                </div>
+            </div>
+            <div class="top_r">
+                <div class="ok"><a href="#">安付宝ok卡专区＞</a></div>
+            </div>
+        </div> 
+    </div>
+
+    <!-- nav -->
+    <div id="nav">
+        <div class="nav common">
+            <div class="nav_l">
+                <i class="all"></i>
+                <a href="#"><span>所有商品分类</span></a>
+            </div>
+            <div class="nav_r">
+                <ul>
+                    <li><a href="#">生活日用</a></li>
+                    <li><a href="#">24H百货</a></li>
+                    <li><a href="#">全球购</a></li>
+                    <li><a href="#">精品闪购</a></li>
+                    <li><a href="#">电器城</a></li>
+                    <li><a href="#">奥莱代购</a></li>
+                    <li><a href="#">百联卡</a></li>
+                    <li><a href="#">百联到家</a></li>
+                    <li><a href="#"><img src="css/img/1720329693.png" width="35" height="35"alt="" />兜来花</a></li>
+                </ul>           
+            </div>
+        </div>
+    </div>
+
+    <!-- banner -->
+    <div id="banner">
+        <div class="banner common">
+            <div class="banner_auto ">
+                <div class="nav_move_top fl">
+                    <ul>
+                        <li><i></i><a href="#">百联进口 全球购</a></li>
+                        <li><i></i><a href="#">生鲜食品</a></li>
+                        <li><i></i><a href="#">食品粮油 酒水冲饮</a></li>
+                        <li><i></i><a href="#">美容护理</a></li>
+                        <li><i></i><a href="#">餐厨用具 家居家装</a></li>
+                        <li><i></i><a href="#">母婴玩具</a></li>
+                        <li><i></i><a href="#">家清 纸巾 一次性</a></li>
+                        <li><i></i><a href="#">女装 男装</a></li>
+                        <li><i></i><a href="#">鞋靴箱包 珠宝饰品</a></li>
+                        <li><i></i><a href="#">手机数码 电脑办公</a></li>
+                        <li><i></i><a href="#">家用电器</a></li>
+                        <li><i></i><a href="#">运动户外 汽车用品</a></li>
+                        <li><i></i><a href="#">营养保健 第一医药</a></li>
+                        <li><i></i><a href="#">礼品卡 充值 图书</a></li>
+                    </ul>
+                </div>
+            <!-- 轮播图 -->
+<!--             <div  class="swiper-container fl" style="height: 430px; width: 715px">
+                <div class="swiper-wrapper">
+                    <a href="javascript:void(0)"  class="swiper-slide" style="opacity:1;background: rgb(1, 37, 85) url('img/banner1.jpg') no-repeat center center"></a>
+                    <a href="javascript:void(0)"  class="swiper-slide" style="background:rgb(252, 227, 153) url('img/banner2.jpg') no-repeat center center"></a>
+                    <a href="javascript:void(0)"  class="swiper-slide" style="background:rgb(239, 250, 246) url('img/banner3.jpg') no-repeat center center"></a>
+                    <a href="javascript:void(0)"  class="swiper-slide" style="background:rgb(239, 250, 246) url('img/banner4.jpg') no-repeat center center"></a>
+                    <a href="javascript:void(0)"  class="swiper-slide" style="background:rgb(252, 227, 153) url('img/banner5.jpg') no-repeat center center"></a>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div> -->
+
+        <div id="carousel-big" class="carousel-big fl">
+            <div id="carousel-center" class="carousel-center fl clearfix">
+                <a href="javascript:void(0)" class="carousel-banner" style="z-index:1;opacity:1;filter:'alpha(opacity=100)';background:red url('img/banner1.jpg') no-repeat center center"></a>
+                <a href="javascript:void(0)" class="carousel-banner" style="background:blue url('img/banner2.jpg') no-repeat center center"></a>
+                <a href="javascript:void(0)" class="carousel-banner" style="background:green url('img/banner3.jpg') no-repeat center center"></a>
+            </div>
+            <a href="javascript:;" id="carousel-left-btn"></a>
+            <a href="javascript:;" id="carousel-right-btn"></a>
+        </div>
+                <div class="banner_right fl">
+                    <div class="welcome">
+                        <img src="css/img/touxiang.png" alt="" />
+                        <div class="load">
+                            <p>Hi,欢迎来到i百联</p>
+                            <p><a href="#" class="denglu">登陆 </a><a href="#" class="zhuce">注册</a></p>
+                        </div>
+                        <div class="gift"><a href="#">新人领取100元礼包！</a></div>
+                        </div>
+                    <div class="more">
+                        <p><span>i百联快报</span><a href="#">更多＞</a></p>
+                        <li><a href="#">[超值]月满聚心意满299减100</a></li>
+                        <li><a href="#">[限时]SKII满300减100</a></li>
+                        <li><a href="#">[震撼]C位出到的降噪耳机</a></li>
+                    </div>
+                    <ul class="other">
+                        <li><a href="#"><div></div><span>手机充值</span></a></li>
+                        <li><a href="#"><div></div><span>流量充值</span></a></li>
+                        <li><a href="#"><div></div><span>固话宽带</span></a></li>
+                        <li><a href="#"><div></div><span>水费</span></a></li>
+                        <li><a href="#"><div></div><span>电费</span></a></li>
+                        <li><a href="#"><div></div><span>燃气费</span></a></li>
+                        <li><a href="#"><div></div><span>游戏充值</span></a></li>
+                        <li><a href="#"><div></div><span>兜来花</span></a></li>
+                        <li><a href="#"><div></div><span>百联卡</span></a></li>
+                    </ul>
+                </div>             
+            </div>
+        </div>  
+    </div>
+
+    <!-- goodslist -->
+    <div id="goodslist">
+        <div class="goodslist common">
+            <div class="gl fangda">
+                <a href="#"><img src="img/chaozhi.jpg" height="250" width="224" alt="" /></a>
+            </div>
+            <div class="gr">
+                <ul class="showgoods">
+                    <li style="padding-left:16px">
+                        <div class="fangda wupin"><a href="#"><img src="img/nfsq.jpg"/></a></div>
+                        <a href="#">农夫山泉天然水(整箱装) 380ml*12</a>
+                        <div>￥<span>11.80</span></div>
+                        <p>参考价：￥14.30</p>
+                    </li>
+                    <li>
+                        <div class="fangda wupin"><a href="#"><img src="img/mi.jpg"/></a></div>
+                        <a href="#">光明米业 崇明好米 5kg 崇明大米 南方米</a>
+                        <div>￥<span>27.80</span></div>
+                        <p>参考价：￥29.90</p>
+                    </li>
+                    <li>
+                        <div class="fangda wupin"><a href="#"><img src="img/wunianye.jpg"/></a></div>
+                        <a href="#">五粮液 52度五粮液1618 500ml</a>
+                        <div>￥<span>918.00</span></div>
+                        <p>参考价：￥1288.00</p>
+                    </li>
+                    <li>
+                        <div class="fangda wupin"><a href="#"><img src="img/pen.jpg" alt="" /></a></div>
+                        <a href="#">珺瓅 新世界福禄寿喜家庭装4双</a>
+                        <div>￥<span>499.0</span></div>
+                        <p>参考价：￥1600.00</p>
+                    </li>
+                    <li>
+                        <div class="fangda wupin"><a href="#"><img src="img/qingfeng.jpg" alt="" /></a></div>
+                        <a href="#">清风 原木纯品金装抽纸150抽3包 中宽幅M</a>
+                        <div>￥<span>9.90</span></div>
+                        <p>参考价：￥20.64</p>
+                    </li>
+                    <li>
+                        <div class="fangda wupin"><a href="#"><img src="img/shushida.jpg" alt="" /></a></div>
+                        <a href="#">舒适达 牙龈护理牙膏 120g</a>
+                        <div>￥<span>25.00</span></div>
+                        <p>参考价：￥39.80</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- picture -->
+    <div id="picture" class="box-zhuti">
+        <div class="picture common">
+            <div class="daishen fangda">
+                <a href="#"><img src="img/daishen.jpg"/></a>
+            </div>
+            <ul>
+                <li class="fangda"><a href="#"><img src="img/zhishengtang.jpg"/></a></li>
+                <li class="fangda"><a href="#"><img src="img/quanqiugou.jpg"/></a></li>
+                <li class="fangda"><a href="#"><img src="img/shengxian.jpg"/></a></li>
+                <li class="fangda"><a href="#"><img src="img/dianqicheng.jpg"/></a></li>
+                <li class="fangda"><a href="#"><img src="img/jingxuan.jpg"/></a></li>
+                <li class="fangda"><a href="#"><img src="img/xinpinfabu.jpg"/></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- fruit -->
+    <div id="fruit" class="box-zhuti">
+        <div class="fruit common">
+            <h3 >生鲜果蔬</h3>
+            <div class="fruit_left">
+                <a href="#"><img src="css/img/mslh.jpg" height="464px" width="306px" /></a>
+            </div>
+            <div class="fruit_right">
+                <div class="fr_top">
+                    <div class="fr_top_left fr_common change">
+                        <a href="#"><img src="css/img/shejian.jpg" alt="" /></a>
+                    </div>
+                    <div class="fr_top_center fr_common change">
+                        <a href="#"><img src="css/img/js.jpg" alt="" /></a>
+                    </div>
+                    <div class="fr_top_right fr_common change">
+                        <a href="#"><img src="css/img/dazhaxie.jpg" alt="" /></a>
+                    </div>
+                </div>
+                <ol class="fr_bottom change">
+                    <li style="width:219px"><a href="#"><img src="css/img/xianhuo.jpg" alt="" /></a></li>
+                    <li><a href="#"><img src="css/img/chiji.jpg" alt="" /></a></li>
+                    <li><a href="#"><img src="css/img/niunai.jpg" alt="" /></a></li>
+                    <li><a href="#"><img src="css/img/qiuri.jpg" alt="" /></a></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div id="fruit" class="box-zhuti">
+        <div class="fruit common">
+            <h3 >时尚大牌</h3>
+            <div class="fruit_left">
+                <a href="#"><img src="img/11.jpg" height="464px" width="306px" /></a>
+            </div>
+            <div class="fruit_right">
+                <div class="fr_top">
+                    <div class="fr_top_left fr_common change">
+                        <a href="#"><img src="img/22.jpg" alt="" /></a>
+                    </div>
+                    <div class="fr_top_center fr_common change">
+                        <a href="#"><img src="img/33.jpg" alt="" /></a>
+                    </div>
+                    <div class="fr_top_right fr_common change">
+                        <a href="#"><img src="img/44.jpg" alt="" /></a>
+                    </div>
+                </div>
+                <ol class="fr_bottom change">
+                    <li style="width:219px"><a href="#"><img src="img/55.jpg" alt="" /></a></li>
+                    <li><a href="#"><img src="img/66.jpg" alt="" /></a></li>
+                    <li><a href="#"><img src="img/77.jpg" alt="" /></a></li>
+                    <li><a href="#"><img src="img/88.jpg" alt="" /></a></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div id="footer">
+        <div class="footer common">
+            <div class="helpnav">
+                <div class="helpnav-com">              
+                    <ul>
+                        <i><span>新手入门</span></i>
+                        <li><a href="#" target="_blank">购物流程</a></li>
+                        <li><a href="#" target="_blank">会员介绍</a></li>
+                        <li><a href="#" target="_blank">常见问题</a></li>
+                        <li><a href="#" target="_blank">发票说明</a></li>
+                        <li><a href="#" target="_blank">联系客服</a></li>
+                    </ul>
+                </div>                
+                <div class="helpnav-com">              
+                    <ul>
+                        <i><span>配送服务</span></i>
+                        <li><a href="#">配送范围及运费</a></li>
+                        <li><a href="#">配送进度查询</a></li>
+                        <li><a href="#">自提服务</a></li>
+                        <li><a href="#">商品验货与签收</a></li>
+                    </ul>
+                </div>
+                <div class="helpnav-com">        
+                    <ul>
+                        <i class="footic3"><span>支付方式</span></i>
+                        <li><a href="#">货到付款</a></li>
+                        <li><a href="#">在线支付</a></li>
+                    </ul>
+                </div>
+                <div class="helpnav-com">   
+                    <ul>
+                        <i class="footic4"><span>售后服务</span></i>
+                        <li><a href="#">退换货政策</a></li>
+                        <li><a href="#">退换货流程</a></li>
+                        <li><a href="#">退款说明</a></li>
+                    </ul>
+                </div>
+                <div class="helpnav-com">
+                    <ul>
+                        <i class="footic5"><span>商家支持</span></i>
+                        <li><a href="#">商家入驻</a></li>
+                        <li><a href="#">商家规则</a></li>
+                        <li><a href="#">商家常见问题</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-nav">
+            <div>
+                <a href="#">关于我们</a>
+                <span>|</span>
+                <a href="#">联系我们</a>
+                <span>|</span>
+                <a href="#">加盟合作</a>
+                <span>|</span>
+                <a href="#">诚征英才</a>
+                <span>|</span>
+                <a href="#">友情链接</a>
+            </div>
+            <div class="copyright">百联集团有限公司旗下 上海百联全渠道电子商务有限公司版权所有 <span>|</span>  客服电话：400-900-8800  <span>|</span> 沪ICP备15028847号</div>
+            <a href="#" class="drug-message">互联网药品信息服务资质证书编号：沪-（非营业性）-2016-0044</a><br>
+            <a href="#" class="drug-message">全渠道增值电信业务经营许可证</a>
+            <div class="police">
+                <a href="#">
+                <img src="css/img/gongan.png">
+                <span style="">沪公网安备  31010102002366号</span>
+              </a>
+              <a href="#">
+                <img src="css/img/wangjing.png">
+                <span style="">网购大家评</span>
+              </a>
+              <a href="#">
+                <img src="css/img/gongs.png" width="20" height="21">
+                <span style="">上海工商</span>
+              </a>
+              <a href="#">
+                <img src="css/img/zhizhao.png">
+                <span style="">经营执照</span>
+              </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
