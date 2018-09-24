@@ -1,0 +1,136 @@
+/*
+    top
+ */
+#top .top {
+  margin: 0 auto;
+  width: 952px;
+  height: 109px; }
+  #top .top a {
+    float: left;
+    margin-top: 29px;
+    margin-right: 20px; }
+
+/*
+    main
+ */
+#main .main {
+  margin: 0 auto;
+  width: 950px;
+  height: 790px;
+  border: 1px solid #ccc;
+  box-shadow: 3px 3px 10px #ccc; }
+  #main .main i {
+    color: #df3d36; }
+  #main .main .mtop {
+    height: 30px;
+    border-bottom: 1px solid #e1dfda;
+    padding: 10px 20px;
+    line-height: 30px; }
+    #main .main .mtop .welcome {
+      float: left;
+      color: #ff002a;
+      font-size: 16px; }
+    #main .main .mtop .login {
+      float: right;
+      color: #63625d;
+      font-size: 14px; }
+      #main .main .mtop .login a {
+        color: #0088cc; }
+  #main .main .main_bottom {
+    height: auto;
+    width: 759px;
+    height: 582px;
+    margin: 50px 0px 74px 191px; }
+    #main .main .main_bottom .username, #main .main .main_bottom .password, #main .main .main_bottom .checkpassword, #main .main .main_bottom .phone, #main .main .main_bottom .email {
+      width: 734px;
+      height: 56px;
+      padding: 10px 0; }
+      #main .main .main_bottom .username input, #main .main .main_bottom .password input, #main .main .main_bottom .checkpassword input, #main .main .main_bottom .phone input, #main .main .main_bottom .email input {
+        width: 300px;
+        height: 36px;
+        border: 1px solid #ccc;
+        text-indent: 2.2em; }
+      #main .main .main_bottom .username .qwe, #main .main .main_bottom .password .qwe, #main .main .main_bottom .checkpassword .qwe, #main .main .main_bottom .phone .qwe, #main .main .main_bottom .email .qwe {
+        float: left;
+        text-align: right;
+        text-indent: 0px;
+        font-size: 12px;
+        color: #000;
+        line-height: 36px; }
+    #main .main .main_bottom .username > input {
+      background: url(img/register.png) no-repeat 10px 9px; }
+    #main .main .main_bottom .password > input, #main .main .main_bottom .checkpassword > input, #main .main .main_bottom .check > input, #main .main .main_bottom .messagecheck > input {
+      background: url(img/register.png) no-repeat 10px -52px; }
+    #main .main .main_bottom .phone > input {
+      background: url(img/register.png) no-repeat 10px -180px; }
+    #main .main .main_bottom .email > input {
+      background: url(img/register.png) no-repeat 10px -287px; }
+    #main .main .main_bottom .check, #main .main .main_bottom .messagecheck {
+      width: 734px;
+      height: 56px;
+      padding: 10px 0; }
+      #main .main .main_bottom .check input, #main .main .main_bottom .messagecheck input {
+        float: left;
+        width: 200px;
+        height: 36px;
+        border: 1px solid #ccc;
+        text-indent: 2.2em; }
+      #main .main .main_bottom .check > div, #main .main .main_bottom .messagecheck > div {
+        float: left;
+        text-align: right;
+        text-indent: 0px;
+        font-size: 12px;
+        color: #000;
+        line-height: 36px; }
+      #main .main .main_bottom .check > img, #main .main .main_bottom .check b, #main .main .main_bottom .messagecheck > img, #main .main .main_bottom .messagecheck b {
+        display: inline-block;
+        font-weight: 400;
+        float: left;
+        font-size: 14px;
+        text-align: center;
+        line-height: 36px;
+        width: 90px;
+        height: 36px;
+        margin: 0 5px;
+        border: 1px solid #c8c8c8;
+        background: #f5f5f5;
+        cursor: pointer; }
+      #main .main .main_bottom .check > a, #main .main .main_bottom .messagecheck > a {
+        color: #0084cc;
+        text-decoration: underline;
+        font-size: 14px; }
+    #main .main .main_bottom .agree > p {
+      color: #666666;
+      font-size: 14px; }
+      #main .main .main_bottom .agree > p > input, #main .main .main_bottom .agree > p label {
+        cursor: pointer; }
+      #main .main .main_bottom .agree > p a {
+        color: #0088cc; }
+    #main .main .main_bottom .complay {
+      width: 734px;
+      height: 56px; }
+      #main .main .main_bottom .complay .cp {
+        width: 300px;
+        height: 36px;
+        background: #e6133c;
+        margin: 16px 0 0 110px;
+        color: #ffffff;
+        cursor: pointer; }
+
+/*
+    footer
+ */
+#footer .bottom-nav {
+  line-height: 24px;
+  text-align: center;
+  padding: 30px 0 0;
+  color: #999; }
+  #footer .bottom-nav .copyright:first-child {
+    margin: 0 105px; }
+  #footer .bottom-nav a {
+    color: #003333;
+    font-size: 14px; }
+  #footer .bottom-nav .police a span {
+    color: #999; }
+
+/*# sourceMappingURL=register.css.map */

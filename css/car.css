@@ -1,0 +1,345 @@
+/*
+    tools
+ */
+#tools {
+  height: 30px;
+  min-width: 1190px;
+  width: 100%;
+  border-top: 1px solid #FFF;
+  border-bottom: 1px solid #e9e9e9;
+}
+#tools .warp {
+  display: block;
+}
+#tools .warp .bl_left {
+  background: url(img/bl_logo_m.png) 2px center no-repeat;
+  width: 186px;
+  padding: 0 12px 0 18px;
+  float: left;
+  margin-left: 50px;
+}
+#tools .warp .bl_left span {
+  line-height: 30px;
+  font-size: 14px;
+  color: #8d8d8d;
+  width: 156px;
+  height: 30px;
+  font-size: 12px;
+}
+#tools .warp .bl_center {
+  line-height: 30px;
+}
+#tools .warp .bl_center a {
+  font-size: 12px;
+  float: left;
+  color: #666;
+  padding: 0 10px;
+  display: block;
+  height: 30px;
+}
+#tools .warp .bl_center a:hover {
+  color: #ed595c #ed595c;
+}
+#tools .warp ul {
+  float: right;
+}
+#tools .warp ul li {
+  font-size: 12px;
+  float: left;
+}
+#tools .warp ul li a {
+  line-height: 30px;
+  padding: 0 10px;
+  decoration: none;
+  color: #666;
+  height: 30px;
+  display: block;
+}
+#tools .warp ul li a:hover {
+  color: #ed595c;
+}
+
+/*
+    top
+ */
+#top {
+  border-bottom: 1px solid #ddd;
+}
+#top .top {
+  margin: 0 auto;
+  width: 952px;
+  height: 109px;
+}
+#top .top .img_car {
+  float: left;
+  margin-top: 29px;
+  margin-right: 20px;
+}
+#top .top span {
+  width: 170px;
+  height: 44px;
+  line-height: 44px;
+  float: left;
+  display: inline;
+  color: #666;
+  font-size: 22px;
+  margin: 40px 0 0 10px;
+}
+#top .top .top_right {
+  width: auto;
+  height: 24px;
+  line-height: 24px;
+  color: #333;
+  float: right;
+  display: inline;
+  font-size: 14px;
+  margin: 60px 4px 0 0;
+}
+#top .top .top_right a {
+  color: #e6133c;
+  font-weight: 700;
+}
+#top .top .top_right a:hover {
+  text-decoration: underline;
+}
+
+/*
+    buy
+ */
+#buy .buy {
+  width: 990px;
+  height: 51px;
+  border-bottom: 1px solid #ccc;
+}
+#buy .buy .all_goods {
+  width: auto;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 6px;
+  margin-top: 18px;
+  float: left;
+  display: inline;
+  border-bottom: 2px solid #333;
+  color: #333;
+  font-size: 16px;
+  font-weight: 700;
+}
+#buy .buy .buyto {
+  width: auto;
+  height: 48px;
+  line-height: 48px;
+  float: right;
+  display: inline;
+  margin: 3px 10px 0 0;
+  color: #333;
+}
+#buy .buy .buyto .send_message {
+  width: auto;
+  height: 48px;
+  line-height: 48px;
+  float: left;
+  margin-top: 3px;
+  color: #333;
+}
+#buy .buy .buyto .address-name {
+  margin-top: 3px;
+  width: auto;
+  float: right;
+}
+#buy .shopname {
+  width: 990px;
+  height: 44px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+#buy .shopname .cart-head div {
+  float: left;
+  padding: 0 50px;
+  line-height: 44px;
+}
+
+#shangpin::-webkit-scrollbar {
+  display: none;
+}
+
+#shangpin .shangpin {
+  width: 980px;
+}
+#shangpin .shangpin .allgoods {
+  text-align: center;
+  width: 980px;
+  height: 220px;
+}
+#shangpin .shangpin .allgoods .showgoods {
+  float: left;
+  width: 980px;
+}
+#shangpin .shangpin .allgoods .showgoods > input {
+  margin-top: 35px;
+  float: left;
+}
+#shangpin .shangpin .allgoods .showprice, #shangpin .shangpin .allgoods .showtitle, #shangpin .shangpin .allgoods .showNumber, #shangpin .shangpin .allgoods .showgoods, #shangpin .shangpin .allgoods .total, #shangpin .shangpin .allgoods .del {
+  float: left;
+  margin-top: 20px;
+}
+#shangpin .shangpin .allgoods .showgoods {
+  display: block;
+}
+#shangpin .shangpin .allgoods .showgoods > input {
+  margin-left: 45px;
+}
+#shangpin .shangpin .allgoods .showgoods img {
+  margin-left: 10px;
+  width: 78px;
+  height: 78px;
+  border: 1px solid #ddd;
+  float: left;
+  display: inline;
+  margin-right: 10px;
+}
+#shangpin .shangpin .allgoods .showtitle > span {
+  width: 180px;
+  height: 36px;
+  line-height: 18px;
+  float: left;
+  display: inline;
+  overflow: hidden;
+  word-break: break-all;
+  text-overflow: ellipsis;
+}
+#shangpin .shangpin .allgoods .showNumber > em {
+  border: 1px solid #aaa;
+  float: left;
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  background: #f0f0f0;
+}
+#shangpin .shangpin .allgoods .showNumber > input {
+  float: left;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+  line-height: 24px;
+  border: 1px solid #aaa;
+  color: #333;
+  text-align: center;
+}
+#shangpin .shangpin .allgoods .showprice {
+  margin: 27px 110px 0 30px;
+  display: inline-block;
+}
+#shangpin .shangpin .allgoods .total {
+  margin-left: 90px;
+}
+#shangpin .shangpin .allgoods .del {
+  margin-left: 146px;
+}
+#shangpin .goodscar {
+  height: 50px;
+  line-height: 50px;
+  background: #ccc;
+  overflow: hidden;
+}
+#shangpin .goodscar .select {
+  float: left;
+  margin: 0 40px 0 147px;
+}
+#shangpin .goodscar .shanchu {
+  width: auto;
+  height: 22px;
+  line-height: 24px;
+  color: #666;
+  margin: 13px 20px 0 0;
+  float: left;
+  display: inline;
+}
+#shangpin .goodscar .shoucang, #shangpin .goodscar .xuanze, #shangpin .goodscar .jine, #shangpin .goodscar .shixiao {
+  display: block;
+  float: left;
+  color: #666;
+}
+#shangpin .goodscar .shoucang, #shangpin .goodscar .shixiao {
+  margin: 0 20px;
+}
+#shangpin .goodscar .xuanze, #shangpin .goodscar .jine {
+  margin-left: 90px;
+}
+#shangpin .goodscar .jine i, #shangpin .goodscar .jine span {
+  color: #d62233;
+  font-size: 18px;
+}
+#shangpin .goodscar .jiesuan {
+  width: 120px;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+  text-align: center;
+  float: right;
+  display: inline;
+  background: #d62233;
+}
+
+/*
+    footer
+ */
+#footer {
+  background: #F3F3F3;
+  width: 100%;
+}
+#footer .footer .helpnav {
+  height: 170px;
+  padding: 24px 0;
+}
+#footer .footer .helpnav i {
+  display: inline-block;
+  background: url(img/footer1200_sprite.png) no-repeat 0 0;
+  width: 40px;
+  height: 40px;
+}
+#footer .footer .helpnav ul {
+  float: left;
+  width: 200px;
+  height: 170px;
+  margin-left: 30px;
+}
+#footer .footer .helpnav ul i {
+  display: block;
+  font-size: 16px;
+  height: 40px;
+  width: 145px;
+  text-align: center;
+  line-height: 40px;
+}
+#footer .footer .helpnav ul i span {
+  margin-left: 20px;
+}
+#footer .footer .helpnav ul li {
+  height: 26px;
+  width: 145px;
+  margin-left: 50px;
+}
+#footer .footer .helpnav ul li a {
+  color: #555555;
+}
+#footer .footer .helpnav ul li a:hover {
+  color: #F8684E;
+}
+#footer .bottom-nav {
+  line-height: 24px;
+  text-align: center;
+  padding: 30px 0 0;
+  color: #999;
+}
+#footer .bottom-nav div:first-child {
+  margin: 0 105px;
+}
+#footer .bottom-nav a {
+  color: #555555;
+}
+#footer .bottom-nav .police a {
+  color: #bbb;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=car.css.map */
