@@ -1,0 +1,176 @@
+/*
+    top
+ */
+#top{
+    .top{
+        margin:0 auto;
+        width: 952px;
+        height: 109px;
+        a{
+            float: left;
+            margin-top: 29px;
+            margin-right:20px;
+        }
+    }
+}
+/*
+    main
+ */
+#main{
+    .main{
+        margin:0 auto;
+        width: 950px;
+        height: 790px;
+        border:1px solid #ccc;
+        box-shadow:3px 3px 10px #ccc;
+        i{
+            color:#df3d36;
+        }
+        .mtop{
+            height: 30px;
+            border-bottom: 1px solid #e1dfda;
+            padding: 10px 20px;
+            line-height: 30px;
+            .welcome{
+                float: left;
+                color: #ff002a;
+                font-size: 16px;
+            }
+            .login{
+                float: right;
+                color: #63625d;
+                font-size: 14px;
+                a{
+                    color: #0088cc;
+                }
+            }
+        }
+        .main_bottom{
+            height:auto;
+            width: 759px;
+            height: 582px; 
+            margin: 50px 0px 74px 191px;    
+            .username,.password,.checkpassword,.phone,.email{
+                width: 734px;
+                height: 56px;
+                padding:10px 0;
+                input{
+                    width: 300px;
+                    height: 36px;
+                    border:1px solid #ccc;
+                    text-indent:2.2em;
+                }
+                .qwe{
+                    float: left;
+                    text-align: right;
+                    text-indent: 0px;
+                    font-size: 12px;
+                    color: #000;
+                    line-height: 36px;
+                }
+            }
+            .username>input{
+                background:url(img/register.png) no-repeat 10px 9px;
+            }
+            .password>input,.checkpassword>input,.check>input,.messagecheck>input{
+                background: url(img/register.png) no-repeat 10px -52px;
+            }
+            .phone>input{
+                background: url(img/register.png) no-repeat 10px -180px;
+            }
+            .email>input{
+                background:url(img/register.png) no-repeat 10px -287px;
+            }
+            .check,.messagecheck{
+                width: 734px;
+                height: 56px;
+                padding:10px 0;
+                input{
+                    float:left;
+                    width: 200px;
+                    height: 36px;
+                    border:1px solid #ccc;
+                    text-indent:2.2em;                    
+                }
+                >div{
+                    float: left;
+                    text-align: right;
+                    text-indent: 0px;
+                    font-size: 12px;
+                    color: #000;
+                    line-height: 36px;
+                }
+                >img,b{
+                    display:inline-block;
+                    font-weight:400;
+                    float:left;
+                    font-size:14px;
+                    text-align:center;
+                    line-height: 36px;
+                    width: 90px;
+                    height: 36px;
+                    margin:0 5px;
+                    border: 1px solid #c8c8c8;
+                    background: #f5f5f5;
+                    cursor: pointer;
+                }
+                >a{
+                    color: #0084cc;
+                    text-decoration: underline;
+                    font-size: 14px;
+                }
+            }
+            .agree{
+                >p{
+                    color:#666666;
+                    font-size: 14px;
+                    >input,label{
+                        cursor: pointer;
+                    }
+                    a{
+                        color: #0088cc;
+                    }
+                }    
+            }
+            .complay{
+                width: 734px;
+                height: 56px;               
+                .cp{
+                    width: 300px;
+                    height: 36px;
+                    background: #e6133c;
+                    margin:16px 0 0 110px;
+                    color: #ffffff;
+                    cursor: pointer;
+                }
+            }              
+        }
+    }
+}
+/*
+    footer
+ */
+#footer{
+    .bottom-nav{
+        line-height: 24px;
+        text-align: center;
+        padding: 30px 0 0;
+        color: #999;
+        .copyright{
+            &:first-child{
+                margin:0 105px;
+            }
+        }
+        a{
+            color: #003333;
+            font-size: 14px;
+        }
+        .police{
+            a{
+                span{
+                    color: #999;
+                }
+            }
+        }
+    }
+}
